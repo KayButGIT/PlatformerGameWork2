@@ -36,6 +36,12 @@ public class EnemyController : MonoBehaviour
     public float knockbackStrength = 20f;
     public float hitStunAttackDelay = 0.1f;
 
+    // >>> ONLY NEW PART <<<
+    [Header("Ledge Check")]
+    public Transform ledgeCheck;
+    public float ledgeCheckDistance = 0.5f;
+    // >>> ONLY NEW PART <<<
+
     private Transform player;
     private Rigidbody2D rb;
     private float nextAttackTime;
@@ -55,16 +61,34 @@ public class EnemyController : MonoBehaviour
 
     void CheckGrounded() => isGrounded = Physics2D.OverlapCircle(groundCheck.position, groundCheckRadius, groundLayer);
 
+    // >>> ONLY NEW FUNCTION <<<
+    bool IsGroundAhead()
+    {
+        RaycastHit2D hit = Physics2D.Raycast(ledgeCheck.position, Vector2.down, ledgeCheckDistance, groundLayer);
+        return hit.collider != null;
+    }
+    // >>> ONLY NEW FUNCTION <<<
 
     bool DetectPlayerInFront()
     {
-        Vector2 direction = isFacingRight ? Vector2.right : Vector2.left;
-        Vector2 offset = direction * -detectionOffset;
-        RaycastHit2D hit = Physics2D.BoxCast(transform.position + (Vector3)offset, new Vector2(attackRange, 1f), 0f, direction, detectionRadius, playerLayer);
+        int direction = transform.localScale.x > 0 ? 1 : -1;
+
+        Vector2 dir = Vector2.right * direction;
+        Vector2 offset = dir * -detectionOffset;
+
+        RaycastHit2D hit = Physics2D.BoxCast(
+            transform.position + (Vector3)offset,
+            new Vector2(attackRange, 1f),
+            0f,
+            dir,
+            detectionRadius,
+            playerLayer
+        );
+
         return hit.collider != null && hit.collider.CompareTag("Player");
     }
 
-    [System.Obsolete]
+
     void Update()
     {
         CheckGrounded();
@@ -87,7 +111,6 @@ public class EnemyController : MonoBehaviour
         }
     }
 
-    [System.Obsolete]
     void FixedUpdate()
     {
         if (canMove && player != null && DetectPlayerInFront())
@@ -96,10 +119,22 @@ public class EnemyController : MonoBehaviour
         }
     }
 
-    [System.Obsolete]
     void ChasePlayer()
     {
         if (player == null) return;
+
+        // >>> ONLY NEW GUARD <<<
+        if (!IsGroundAhead())
+        {
+            // Stop only forward movement
+            rb.linearVelocity = new Vector2(0, rb.linearVelocity.y);
+
+            // Allow turning if player changes side
+            FlipTowardsPlayer();
+            return;
+        }
+
+        // >>> ONLY NEW GUARD <<<
 
         FlipTowardsPlayer();
 
@@ -109,11 +144,11 @@ public class EnemyController : MonoBehaviour
 
     void FlipTowardsPlayer()
     {
-        if (player == null) return;
+        if (player == null || isDie) return;
 
         bool shouldFaceRight = player.position.x > transform.position.x;
-        
-        if (shouldFaceRight != isFacingRight) 
+
+        if (shouldFaceRight != isFacingRight)
         {
             Flip();
         }
@@ -125,7 +160,6 @@ public class EnemyController : MonoBehaviour
         transform.localScale = new Vector3(-transform.localScale.x, transform.localScale.y, transform.localScale.z);
     }
 
-    [System.Obsolete]
     void AttackPlayer()
     {
         if (Time.time < nextAttackTime) return;
@@ -142,7 +176,6 @@ public class EnemyController : MonoBehaviour
         StartCoroutine(ResumeMovementAfterAttack());
     }
 
-    [System.Obsolete]
     IEnumerator ApplyDamageAfterDelay()
     {
         yield return new WaitForSeconds(attackDelay);
@@ -160,7 +193,6 @@ public class EnemyController : MonoBehaviour
         canMove = true;
     }
 
-    [System.Obsolete]
     public void TakeDamage(int damage, Vector2 hitDirection)
     {
         health -= damage;
@@ -186,7 +218,7 @@ public class EnemyController : MonoBehaviour
             }
         }
     }
-    
+
     void Knockback(Vector2 hitDirection)
     {
         rb.linearVelocity = Vector2.zero;
@@ -198,17 +230,6 @@ public class EnemyController : MonoBehaviour
     }
 
     void PlayGetHitSound() => AudioManager.Instance.PlaySoundGlobal(getHitSound);
-
     void PlayAttackSound() => AudioManager.Instance.PlaySoundGlobal(attackSound);
     void PlayDieSound() => AudioManager.Instance.PlaySoundGlobal(dieSound);
-
-    void OnDrawGizmosSelected()
-    {
-        Vector2 direction = isFacingRight ? Vector2.right : Vector2.left;
-        Gizmos.color = Color.green;
-
-        Vector3 adjustedPosition = transform.position + (Vector3)(direction * (detectionRadius / 2 - detectionOffset));
-
-        Gizmos.DrawWireCube(adjustedPosition, new Vector3(detectionRadius, 1f, 1f));
-    }
 }
