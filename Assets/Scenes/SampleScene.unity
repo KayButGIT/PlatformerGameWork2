@@ -3396,7 +3396,7 @@ MonoBehaviour:
   skillCooldown: 2
   skillDamage: 2
   skillConsumeStamina: 120
-  skillRadius: 1.5
+  skillRadius: 1.9
   skillOffset: 1
   Invincibility: 0.5
   skillDestinationPoint: {fileID: 2124917230}
@@ -3412,6 +3412,7 @@ MonoBehaviour:
   playerController: {fileID: 1324309283}
   skillSound: {fileID: 8300000, guid: 1ab913937b4ff82488a07d5a1a7c4ff5, type: 3}
   animator: {fileID: 1324309279}
+  skillDelay: 0.7
   isSkillActive: 0
 --- !u!70 &1324309278
 CapsuleCollider2D:
@@ -3615,6 +3616,7 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 256
   isAttacking: 0
+  attackConsumeStamina: 50
   jumpSound: {fileID: 8300000, guid: fc5ba9d3a8eee494785bf9dd7f6b320d, type: 3}
   attackSound: {fileID: 8300000, guid: 16f10d6433c0fdf48a4209b23947e9f2, type: 3}
   dashSound: {fileID: 8300000, guid: 94b955eb2ce9f6e4a8942e8e70e2022b, type: 3}

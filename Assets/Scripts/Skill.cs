@@ -35,6 +35,10 @@ public class Skill : MonoBehaviour
     [Header("Animatation")]
     public Animator animator;
 
+    [Header("Attack Control")]
+    private bool canAttack = true;
+    public float skillDelay = 20f;
+
     public bool isSkillActive = false;
     private float skillTimeLeft;
     private float lastSkillTime = -Mathf.Infinity;
@@ -98,6 +102,9 @@ public class Skill : MonoBehaviour
 
         PlaySkillSound();
         StartCoroutine(InvincibilityCoroutine(Invincibility));
+
+        canAttack = false;
+        StartCoroutine(EnableAttackAfterCooldown(skillDelay));
     }
 
     [System.Obsolete]
@@ -134,6 +141,17 @@ public class Skill : MonoBehaviour
     public void PlaySkillSound()
     {
         AudioManager.Instance.PlaySoundGlobal(skillSound);
+    }
+
+    IEnumerator EnableAttackAfterCooldown(float duration)
+    {
+        yield return new WaitForSeconds(duration);
+        canAttack = true;
+    }
+
+    public bool CanAttack()
+    {
+        return canAttack;
     }
 
 }

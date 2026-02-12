@@ -48,6 +48,7 @@ public class PlayerController : MonoBehaviour
     public float attackDelay = 0.3f;
     public LayerMask enemyLayers;
     public bool isAttacking = false;
+    public int attackConsumeStamina = 50;
 
     [Header("Player SFX")]
     public AudioClip jumpSound;
@@ -92,9 +93,13 @@ public class PlayerController : MonoBehaviour
             }
         }
 
-        if (Input.GetKeyDown(KeyCode.X) && !isAttacking && isGrounded && !skill.isSkillActive)
+        if (Input.GetKeyDown(KeyCode.X) && !isAttacking && isGrounded && !skill.isSkillActive && skill.CanAttack())
         {
-            Attack();
+            canUse = playerHealth.UseDash(attackConsumeStamina);
+            if (canUse)
+            {
+                Attack();
+            }
         }
 
         // Animator flags
