@@ -154,6 +154,19 @@ public class PlayerHealth : MonoBehaviour
 
         PlayGetHitDieSound();
         StartCoroutine(EnableUIAfterDelay(2f));
+
+        EnemyPatrolAI[] patrols = FindObjectsOfType<EnemyPatrolAI>();
+        foreach (var p in patrols)
+        {
+            // Stop movement
+            p.rb.linearVelocity = Vector2.zero;
+
+            // Kill all coroutines (RandomIdleRoutine)
+            p.StopAllCoroutines();
+
+            // Disable script
+            p.enabled = false;
+        }
     }
 
     [System.Obsolete]
