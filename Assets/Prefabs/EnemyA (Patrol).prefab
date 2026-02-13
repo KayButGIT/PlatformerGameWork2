@@ -421,7 +421,7 @@ SpriteRenderer:
   m_SortingLayerID: 782626605
   m_SortingLayer: 5
   m_SortingOrder: 0
-  m_Sprite: {fileID: -7219542275010057529, guid: ef4f7bdc160aef7beb15cd774ece0d36, type: 3}
+  m_Sprite: {fileID: -1144952155, guid: 94c6465ffb4df304eb2b89ea9ee62115, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -464,9 +464,9 @@ MonoBehaviour:
   attackRange: 1.5
   attackDelay: 0.5
   resumeMovementAfterAttack: 1.5
-  getHitSound: {fileID: 8300000, guid: 24ac712379586d5429930bffb6a4653f, type: 3}
+  getHitSound: {fileID: 8300000, guid: 6fbf1d10fde5f3848b6d072b2491f70a, type: 3}
   attackSound: {fileID: 8300000, guid: 582b2fdb02b568e4b950b859f641713f, type: 3}
-  dieSound: {fileID: 8300000, guid: 1997cfcfca2117f419f6199ba93a3034, type: 3}
+  dieSound: {fileID: 8300000, guid: 5211c559c5f43af4eafc2cd7c4473ebb, type: 3}
   minscore: 100
   maxscore: 120
   knockbackStrength: 20
@@ -510,7 +510,7 @@ Animator:
   m_GameObject: {fileID: 5815480055479862905}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 0c7707347a56b064dbb7de702bb8bfb3, type: 2}
+  m_Controller: {fileID: 9100000, guid: 9fb4a962380e7a04d92a835f739ae095, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -582,6 +582,7 @@ MonoBehaviour:
   groundLayer:
     serializedVersion: 2
     m_Bits: 64
+  enemyController: {fileID: 0}
   patrolSpeed: 2
   chaseSpeed: 2.5
   ledgeRayDistance: 0.4
