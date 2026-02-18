@@ -61,13 +61,40 @@ public class EnemyController : MonoBehaviour
 
     void CheckGrounded() => isGrounded = Physics2D.OverlapCircle(groundCheck.position, groundCheckRadius, groundLayer);
 
-    // >>> ONLY NEW FUNCTION <<<
+
     bool IsGroundAhead()
     {
-        RaycastHit2D hit = Physics2D.Raycast(ledgeCheck.position, Vector2.down, ledgeCheckDistance, groundLayer);
-        return hit.collider != null;
+        bool frontFoot = Physics2D.OverlapCircle(
+            ledgeCheck.position,
+            0.2f,
+            groundLayer
+        );
+
+        bool bodyFoot = Physics2D.OverlapCircle(
+            groundCheck.position,
+            0.2f,
+            groundLayer
+        );
+
+        return frontFoot && bodyFoot;
     }
-    // >>> ONLY NEW FUNCTION <<<
+
+    void OnDrawGizmos()
+    {
+        if (ledgeCheck)
+        {
+            Gizmos.color = Color.red;
+            Gizmos.DrawWireSphere(ledgeCheck.position, 0.2f);
+        }
+
+        if (groundCheck)
+        {
+            Gizmos.color = Color.green;
+            Gizmos.DrawWireSphere(groundCheck.position, 0.2f);
+        }
+    }
+
+
 
     bool DetectPlayerInFront()
     {

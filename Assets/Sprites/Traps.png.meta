@@ -1,0 +1,283 @@
+fileFormatVersion: 2
+guid: f7fa526dc5fbb31469b59b679ef91649
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -5468790592976364651
+    second: Desert Tilemap_0
+  - first:
+      213: -2383741876275011858
+    second: Desert Tilemap_1
+  - first:
+      213: -3884715965595511514
+    second: Desert Tilemap_2
+  - first:
+      213: -8437776406550564090
+    second: Desert Tilemap_3
+  - first:
+      213: 206798997254147278
+    second: Desert Tilemap_4
+  - first:
+      213: -4856761689525431664
+    second: Desert Tilemap_5
+  - first:
+      213: 5363267872212170157
+    second: Desert Tilemap_6
+  - first:
+      213: -5379244877127775761
+    second: Desert Tilemap_7
+  - first:
+      213: 7637900449523605670
+    second: Desert Tilemap_8
+  - first:
+      213: 332458512480116960
+    second: Desert Tilemap_9
+  - first:
+      213: 1880504612902636366
+    second: Desert Tilemap_10
+  - first:
+      213: -8801142251164770334
+    second: Desert Tilemap_11
+  - first:
+      213: -8260834803180959935
+    second: Desert Tilemap_12
+  - first:
+      213: -2543106300728593072
+    second: Desert Tilemap_13
+  - first:
+      213: -6008861564633305578
+    second: Desert Tilemap_14
+  - first:
+      213: 730979537336731218
+    second: Desert Tilemap_15
+  - first:
+      213: -1953803171179538701
+    second: Desert Tilemap_16
+  - first:
+      213: 3260087184702015744
+    second: Desert Tilemap_17
+  - first:
+      213: 3778010333691886559
+    second: Desert Tilemap_18
+  - first:
+      213: 5267557324883824697
+    second: Desert Tilemap_19
+  - first:
+      213: -6525471429613437666
+    second: Desert Tilemap_20
+  - first:
+      213: -5293971318070184846
+    second: Desert Tilemap_21
+  - first:
+      213: 2186492100959632249
+    second: Desert Tilemap_22
+  - first:
+      213: -8342888214307544964
+    second: Desert Tilemap_23
+  - first:
+      213: -80275560273236511
+    second: Desert Tilemap_24
+  - first:
+      213: 6273705776937043701
+    second: Desert Tilemap_25
+  - first:
+      213: 579574702054531982
+    second: Desert Tilemap_26
+  - first:
+      213: -7187867868199916926
+    second: Desert Tilemap_27
+  - first:
+      213: 1540316027585234660
+    second: Desert Tilemap_28
+  - first:
+      213: 1085072892849242155
+    second: Desert Tilemap_29
+  - first:
+      213: 2288104934465519924
+    second: Desert Tilemap_30
+  - first:
+      213: -5809286001125567303
+    second: Desert Tilemap_31
+  - first:
+      213: -5089174289304801457
+    second: Desert Tilemap_32
+  - first:
+      213: -8788239306127197005
+    second: Desert Tilemap_33
+  - first:
+      213: 6661883634074075758
+    second: Desert Tilemap_34
+  - first:
+      213: -3669126872391505991
+    second: Desert Tilemap_35
+  - first:
+      213: -8330320341918099450
+    second: Desert Tilemap_36
+  - first:
+      213: -6185338958100877221
+    second: Desert Tilemap_37
+  - first:
+      213: 8118748831287238171
+    second: Desert Tilemap_38
+  - first:
+      213: 4424341088590871868
+    second: Desert Tilemap_39
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 30
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 4096
+    resizeAlgorithm: 1
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Traps_0
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 45
+        width: 46
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2c5900a7b1de1804592b969099ecc08f
+      internalID: -1841263263
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Traps_1
+      rect:
+        serializedVersion: 2
+        x: 451
+        y: 50
+        width: 26
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 93a4db1328e360a4c9b2c6cb62972630
+      internalID: -1033623843
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: a1bbe76cef6310e4ba66559c1ba37552
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Traps_0: -1841263263
+      Traps_1: -1033623843
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

@@ -85,10 +85,9 @@ public class EnemyPatrolAI : MonoBehaviour
     {
         int dir = transform.localScale.x > 0 ? 1 : -1;
 
-        bool groundAhead = Physics2D.Raycast(
+        bool groundAhead = Physics2D.OverlapCircle(
             ledgeCheck.position,
-            Vector2.down,
-            ledgeRayDistance,
+            0.2f,
             groundLayer
         );
 
@@ -108,6 +107,7 @@ public class EnemyPatrolAI : MonoBehaviour
         rb.linearVelocity = new Vector2(dir * patrolSpeed, rb.linearVelocity.y);
     }
 
+
     void Chase()
     {
         int dir = player.position.x > transform.position.x ? 1 : -1;
@@ -118,10 +118,9 @@ public class EnemyPatrolAI : MonoBehaviour
             Flip();
         }
 
-        bool groundAhead = Physics2D.Raycast(
+        bool groundAhead = Physics2D.OverlapCircle(
             ledgeCheck.position,
-            Vector2.down,
-            ledgeRayDistance,
+            0.2f,
             groundLayer
         );
 
@@ -140,6 +139,7 @@ public class EnemyPatrolAI : MonoBehaviour
 
         rb.linearVelocity = new Vector2(dir * chaseSpeed, rb.linearVelocity.y);
     }
+
 
     void Flip()
     {
@@ -174,10 +174,7 @@ public class EnemyPatrolAI : MonoBehaviour
         if (ledgeCheck)
         {
             Gizmos.color = Color.cyan;
-            Gizmos.DrawLine(
-                ledgeCheck.position,
-                ledgeCheck.position + Vector3.down * ledgeRayDistance
-            );
+            Gizmos.DrawWireSphere(ledgeCheck.position, 0.2f);
         }
 
         if (wallCheck)
@@ -197,3 +194,4 @@ public class EnemyPatrolAI : MonoBehaviour
         }
     }
 }
+
