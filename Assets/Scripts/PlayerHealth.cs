@@ -118,6 +118,21 @@ public class PlayerHealth : MonoBehaviour
         }
     }
 
+    void DisableLayerObjects(string layerName)
+    {
+        int layer = LayerMask.NameToLayer(layerName);
+        GameObject[] allObjects = FindObjectsOfType<GameObject>();
+
+        foreach (GameObject obj in allObjects)
+        {
+            if (obj.layer == layer)
+            {
+                obj.SetActive(false);
+            }
+        }
+    }
+
+
     [System.Obsolete]
     void Die()
     {
@@ -146,11 +161,12 @@ public class PlayerHealth : MonoBehaviour
             Torch.SetActive(false);
 
         ChangeLayerColor("Default", Color.red * 100f);
-        ChangeLayerColor("Background", Color.red * 100f);
+        //ChangeLayerColor("Background", Color.red * 100f);
         ChangeLayerColor("Player", Color.black);
         ChangeLayerColor("Ground", Color.black);
         ChangeLayerColor("Enemy", Color.black);
         ChangeLayerColor("Wall", Color.black);
+        DisableLayerObjects("Background");
 
         PlayGetHitDieSound();
         StartCoroutine(EnableUIAfterDelay(2f));

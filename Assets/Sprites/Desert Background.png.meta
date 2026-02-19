@@ -1,0 +1,355 @@
+fileFormatVersion: 2
+guid: dffcb2a1edc0bf64cb0f466f26747034
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -2588426713543281377
+    second: Desert Background_0
+  - first:
+      213: -211764045020025402
+    second: Desert Background_1
+  - first:
+      213: 2342215858990119034
+    second: Desert Background_2
+  - first:
+      213: 9185718877539165363
+    second: Desert Background_3
+  - first:
+      213: 2770184757635005843
+    second: Desert Background_4
+  - first:
+      213: 7114711231201152743
+    second: Desert Background_5
+  - first:
+      213: 1606784565034268205
+    second: Desert Background_6
+  - first:
+      213: -4809465375457254339
+    second: Desert Background_7
+  - first:
+      213: -4662843873559592655
+    second: Desert Background_8
+  - first:
+      213: -2679662500353715550
+    second: Desert Background_9
+  - first:
+      213: 1572564128916573217
+    second: Desert Background_10
+  - first:
+      213: 6604371071075624190
+    second: Desert Background_11
+  - first:
+      213: 3192904733329546894
+    second: Desert Background_12
+  - first:
+      213: 6806567624519990313
+    second: Desert Background_13
+  - first:
+      213: -11149960121050426
+    second: Desert Background_14
+  - first:
+      213: 6369263221192071151
+    second: Desert Background_15
+  - first:
+      213: -1037944484559304650
+    second: Desert Background_16
+  - first:
+      213: 9218670807906916137
+    second: Desert Background_17
+  - first:
+      213: 7956904936179842284
+    second: Desert Background_18
+  - first:
+      213: -4292503660749017136
+    second: Desert Background_19
+  - first:
+      213: 2544842968402774500
+    second: Desert Background_20
+  - first:
+      213: -2144613646955456835
+    second: Desert Background_21
+  - first:
+      213: 6840984229973191661
+    second: Desert Background_22
+  - first:
+      213: 940093002197277628
+    second: Desert Background_23
+  - first:
+      213: 1902546051221592802
+    second: Desert Background_24
+  - first:
+      213: -3084422894643384404
+    second: Desert Background_25
+  - first:
+      213: -6593074654693008615
+    second: Desert Background_26
+  - first:
+      213: -1222068877633406368
+    second: Desert Background_27
+  - first:
+      213: 2396540851204521660
+    second: Desert Background_28
+  - first:
+      213: -6004318199321020326
+    second: Desert Background_29
+  - first:
+      213: -1562474876224315772
+    second: Desert Background_30
+  - first:
+      213: -571030092314895202
+    second: Desert Background_31
+  - first:
+      213: -6222543486698012036
+    second: Desert Background_32
+  - first:
+      213: -7845528720682781295
+    second: Desert Background_33
+  - first:
+      213: -4062151806455672359
+    second: Desert Background_34
+  - first:
+      213: 7644792516953842861
+    second: Desert Background_35
+  - first:
+      213: -1728766341558554409
+    second: Desert Background_36
+  - first:
+      213: -7780232322009485714
+    second: Desert Background_37
+  - first:
+      213: -612722072842805208
+    second: Desert Background_38
+  - first:
+      213: 8525164198166011880
+    second: Desert Background_39
+  - first:
+      213: -5562719127619945032
+    second: Desert Background_40
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 0
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 32
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 0
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 4096
+    resizeAlgorithm: 1
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Desert Background_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 1024
+        height: 2004
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f15fe1c3e9f041cd0800000000000000
+      internalID: -2588426713543281377
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Desert Background_1
+      rect:
+        serializedVersion: 2
+        x: 1024
+        y: 0
+        width: 1024
+        height: 2004
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6cda16819b9af0df0800000000000000
+      internalID: -211764045020025402
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Desert Background_2
+      rect:
+        serializedVersion: 2
+        x: 2048
+        y: 0
+        width: 1024
+        height: 2004
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a7874660ae8318020800000000000000
+      internalID: 2342215858990119034
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Desert Background_3
+      rect:
+        serializedVersion: 2
+        x: 3072
+        y: 0
+        width: 1024
+        height: 2004
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3b4625ea6aa3a7f70800000000000000
+      internalID: 9185718877539165363
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Desert Background_4
+      rect:
+        serializedVersion: 2
+        x: 4096
+        y: 0
+        width: 1024
+        height: 2004
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 39d39092c5ca17620800000000000000
+      internalID: 2770184757635005843
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 36b91b7f6ca46cb4280f19de6fad1856
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Desert Background_0: -2588426713543281377
+      Desert Background_1: -211764045020025402
+      Desert Background_2: 2342215858990119034
+      Desert Background_3: 9185718877539165363
+      Desert Background_4: 2770184757635005843
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
