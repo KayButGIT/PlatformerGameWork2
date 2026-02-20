@@ -1,4 +1,4 @@
-using UnityEngine;
+﻿using UnityEngine;
 
 public class AudioManager : MonoBehaviour
 {
@@ -31,6 +31,17 @@ public class AudioManager : MonoBehaviour
         if (clip != null)
         {
             globalAudioSource.PlayOneShot(clip);
+        }
+    }
+
+    public void StopAllSounds()
+    {
+        if (globalAudioSource != null)
+        {
+            globalAudioSource.Stop();
+            globalAudioSource.clip = null;   // 🔥 Important for WebGL
+            globalAudioSource.enabled = false;
+            globalAudioSource.enabled = true;
         }
     }
 }

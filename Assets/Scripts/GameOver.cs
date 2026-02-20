@@ -1,4 +1,4 @@
-using UnityEngine;
+﻿using UnityEngine;
 using UnityEngine.SceneManagement;
 using System.Collections;
 using TMPro;
@@ -57,8 +57,15 @@ public class GameOver : MonoBehaviour
 
     void ReloadScene()
     {
-        string currentScene = SceneManager.GetActiveScene().name;
-        SceneManager.LoadScene(currentScene);
+        Time.timeScale = 1f;
+
+        AudioSource[] allAudio = FindObjectsOfType<AudioSource>();
+        foreach (AudioSource audio in allAudio)
+        {
+            audio.Stop();
+        }
+
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
     }
 
     void QuitGame()
